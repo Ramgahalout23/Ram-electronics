@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="quickicon" method="upgrade">
+	<name>plg_quickicon_myjspace</name>
+	<creationDate>19/08/2019</creationDate>
+	<author>Bernard Saulme</author>
+	<authorUrl>https://softs.saulme.fr/</authorUrl>
+	<copyright>Version by Bernard Saulme</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.0</version>
+	<build>11</build>
+	<description>Quick icon - BS MyJspace</description>
+	
+ 	<scriptfile>install.php</scriptfile>
+
+	<files>
+		<filename plugin="myjspace">myjspace.php</filename>
+		<filename>myjspace.css</filename>
+		<filename>index.html</filename>
+		<filename>COPYRIGHT.php</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="fr-FR">fr-FR.plg_quickicon_myjspace.ini</language>
+		<language tag="fr-FR">fr-FR.plg_quickicon_myjspace.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_quickicon_myjspace.ini</language>
+		<language tag="en-GB">en-GB.plg_quickicon_myjspace.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="link" type="list" default="1" description="PLG_QUICKICON_MYJSPACE_LINK_DESC" label="PLG_QUICKICON_MYJSPACE_LINK_LABEL" >
+					<option value="0">PLG_QUICKICON_MYJSPACE_LINK_0</option>
+					<option value="1">PLG_QUICKICON_MYJSPACE_LINK_1</option>
+					<option value="2">PLG_QUICKICON_MYJSPACE_LINK_2</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_myjspace</name>
+	<creationDate>20/09/2019</creationDate>
+	<author>Bernard Saulme</author>
+	<authorUrl>https://softs.saulme.fr</authorUrl>
+	<copyright>© Bernard Saulme</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.1</version>
+	<build>458</build>
+	<description>
+		<![CDATA[BS MyJspace manages a simple personal pages system for your users.]]>
+	</description>
+
+	<!-- Install, update, uninstal scripts -->
+	<scriptfile>script.myjspace.php</scriptfile>
+
+	<!-- Site Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>myjspace.php</filename>
+		<filename>router.php</filename>
+		<folder>assets</folder>
+		<folder>images</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<!-- Languages Section -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB.com_myjspace.ini</language>
+		<language tag="fr-FR">fr-FR.com_myjspace.ini</language>
+	</languages>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			<file driver="mysqli" charset="utf8">sql/install.mysql.utf8.sql</file>
+			<file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<update> <!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+			<schemapath type="mysqli">sql/updates/mysql</schemapath>
+			<schemapath type="postgresql">sql/updates/postgresql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Admin Section -->
+	<administration>
+		<menu img="components/com_myjspace/images/favicon.png">COM_MYJSPACE_HOME</menu>
+		<submenu>
+			<menu view="myjspace" img="class:info" alt="Myjspace/MyJspace" >COM_MYJSPACE_HOME</menu>
+			<menu view="url" img="class:groups" alt="Myjspace/Url" >COM_MYJSPACE_LINKS</menu>
+			<menu view="pages" img="class:user" alt="Myjspace/Pages" >COM_MYJSPACE_PAGES</menu>
+			<menu view="categories" img="class:category" link="option=com_categories&amp;extension=com_myjspace" alt="Myjspace/Category" >COM_MYJSPACE_CATEGORIES</menu>
+			<menu view="tools" img="class:config" alt="Myjspace/Tools" >COM_MYJSPACE_TOOLS</menu>
+			<menu view="help" img="class:help" alt="Myjspace/Help" >COM_MYJSPACE_HELP</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>myjspace.php</filename>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+		</files>	
+
+		<languages folder="language">
+			<language tag="en-GB">en-GB.com_myjspace.ini</language>
+			<language tag="en-GB">en-GB.com_myjspace.sys.ini</language>
+			<language tag="fr-FR">fr-FR.com_myjspace.ini</language>
+			<language tag="fr-FR">fr-FR.com_myjspace.sys.ini</language>
+		</languages>
+	</administration>
+
+	<updateservers>
+		<server type="extension" priority="1" name="BS MyJspace Update Site">https://softs.saulme.fr/download/download.php?h=text/plain&amp;d=myjspace-update.xml</server>
+	</updateservers>
+</extension>

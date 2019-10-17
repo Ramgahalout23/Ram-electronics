@@ -1,0 +1,155 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2013 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+@import 'variables';
+@import 'mixins';
+
+
+/* Button */
+.btn.btn-primary{
+	background:@link_color;
+	&:hover{
+		background: darken(@link_color, 10%);
+	}
+}
+
+input[type='submit']{
+	background:#d9534f;
+	color:#fff;
+	&:hover{
+		background:#d2322d;
+		color:#fff;
+	}
+}
+/* Button end */
+
+/* Link color */
+a{
+	color: darken(@link_color,20%);
+	&:hover {
+	  color: @link_color;
+	}
+}
+/* Link color end */
+
+/* Body */
+
+body {
+	color:@text_color;
+	&.bg {
+		background:@bg_color;
+	}
+}
+
+/* Body end */
+
+
+/* Header start */
+
+
+//Logo
+.logo{
+	background-image:url(../../images/presets/@{preset}/logo.png);
+}
+
+//Menu
+#sp-main-menu {
+ 	ul {
+ 		&.level-0 {
+ 			> li {
+				&:hover,
+				&.active {
+					background: @link_color;
+					>a{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+/*-- Header end --*/
+
+/*-- Portfolio wrapper --*/
+#sp-portfolio-wrapper{
+	.sp-portfolio{
+		//filter
+		.sp-portfolio-filter{
+			a.btn{
+				background-color: @link_color;
+				&.active{
+					background-color: darken(@link_color, 15%);
+				}
+			}
+		}
+	}
+}
+/*-- Portfolio wrapper end--*/
+
+/*-- Pricing wrapper --*/
+#sp-pricing-wrapper{
+	#sp-pricing{
+		.plan{
+			&.featured{
+				li.plan-price{
+					background: @link_color;
+				}
+			}
+		}
+	}
+}
+/*-- Pricing wrapper end--*/
+
+
+
+
+/*-- Team start --*/
+#sp-team-wrapper{
+	//arrow
+	.left-arrow, 
+	.nav-right{
+		color: @link_color;
+		&:hover{
+			color: lighten(@link_color, 10%);
+		}
+	}
+}
+
+/*-- Team end --*/
+
+//Widgets
+.module {
+	&.highlighted {
+		background:#3498DB;
+		a{
+			color:#fff !important;
+		}
+	}
+}
+
+/*-- Bottom start --*/
+#sp-bottom-wrapper{
+	//social
+	#sp-bottom2{
+		a:hover{
+			color: @link_color;
+		}
+	}
+}
+/*-- Bottom end --*/
+
+/*-- Footer start --*/
+#sp-footer-wrapper {
+	background:@bg_color;
+	color:#999;
+}
+/*-- Footer end --*/
+
+
+
+
+

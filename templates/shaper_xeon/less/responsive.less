@@ -1,0 +1,125 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 20010 - 2013 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+.responsive {
+
+	/* Small desktop */
+	@media (min-width: 980px) and (max-width: 1199px) { 
+
+
+	}
+
+
+	/* Portrait tablet to landscape and desktop */
+	@media (min-width: 768px) and (max-width: 979px) {
+
+		#sp-slide .carousel-inner .item .slider-title h1{
+			font-size: 52px !important;
+		}
+		#sp-team-wrapper{
+			h3{
+				font-size: 15px;
+			}
+			.item p{
+				font-size: 12px;
+			}
+		}
+
+		#sp-bottom-wrapper h3.header{
+			font-size: 26px;
+		}
+
+	}
+	/* End Portrait tablet to landscape and desktop */
+
+
+	/* Mobile Standard */
+
+	@media (max-width:767px) {
+
+		&.bg {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		 .container {
+			padding:0 10px;
+			max-width:480px;
+			min-width:280px;
+		}
+		#sp-slider-wrapper a.nav-left{
+			left:0;
+		}
+		#sp-slider-wrapper a.nav-right{
+			right:0;
+		}
+		.sp-main-menu-toggler{
+			right: 145px;
+		}
+		#sp-slide .carousel-inner .item .slider-title h1{
+			font-size: 40px !important;
+			line-height: 40px !important;
+		}
+		p.lead{
+			font-size: 16px;
+			line-height: 18px;
+		}
+		div.appico .col-4{
+			width: 50%;
+		}
+		#sp-pricing .span4{
+			margin-bottom: 10px;
+		}
+		#sp-footer-wrapper{
+			text-align: center;
+			#sp-footer2, 
+			#sp-footer3{
+				text-align: center;
+			}
+			#sp-footer2{
+				margin-top: 20px;
+			}
+		}
+
+
+	}
+	/* End Mobile Standard */
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		.sp-main-menu-toggler{
+			right: 55px;
+		}
+		#sp-service-wrapper .container h2, 
+		#sp-portfolio-wrapper .container h2, 
+		#sp-pricing-wrapper .container h2, 
+		#sp-team-wrapper .container h2, 
+		#sp-bottom-wrapper .container h2{
+			font-size: 34px;
+		}
+
+	}
+
+	/* Landscape phones and down end */
+
+
+	/* Iphone */
+	@media (max-width: 320px){
+		.sp-main-menu-toggler{
+			right: 25px;
+		}
+		div.appico .col-4{
+			width: 100%;
+		}
+	}
+	/* Iphone end */
+
+
+
+
+
+}
+/*-- Responsive End --*/

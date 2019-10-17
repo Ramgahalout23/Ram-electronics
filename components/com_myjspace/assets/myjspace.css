@@ -1,0 +1,242 @@
+/*
+ * Name  : myjspace.css
+ * Author: Bernard Saulmé
+ * (C) Bernard Saulmé
+ */
+
+.myjspace .width100 {
+	width:100%;
+}
+
+.myjspace .large200 {
+	min-width:200px;
+}
+
+.myjspace .icon12 {
+	width:12px;
+	height:12px;
+	border:none;
+}
+
+.myjspace .icon16 {
+	width:16px;
+	height:16px;
+	border:none;
+}
+
+.myjspace .mjp-config {
+	min-width:80px;
+}
+
+.myjspace .mjp-form-button,
+.myjspace .mjp-rss-feed {
+	text-align:right;
+	margin-bottom:10px;
+}
+
+.myjspace .myjspbtn {
+	min-width:60px;
+}
+
+.myjspace .myjspbtn300l {
+	width:100%;
+	text-align:left;
+}
+
+.myjspace table.admintable td {
+	padding-bottom:3px; padding-left:3px; padding-right:3px; padding-top:3px;
+	font-size:11px;
+}
+
+.myjspace table.admintable td {
+	font-size:11px;
+}
+
+.myjspace table.admintable td.key {
+	border-bottom:#e9e9e9 1px solid; text-align:right; background-color:#f6f6f6;
+	width:150px; color:#666; font-weight:bold; border-right:#e9e9e9 1px solid;
+}
+
+.myjspace .table-striped tbody > tr:nth-child(odd) > td {
+	background-color:#f9f9f9;
+}
+
+.myjspace .table-striped tbody > tr:nth-child(odd) > th {
+	background-color:#eeeeee;
+}
+
+.myjspace legend {
+	font-size:12px; font-weight:bold;
+}
+
+.myjspace legend.title-back {
+	font-size:100%; font-weight:bold; color:#2b5c91;
+}
+
+.myjspace legend.title-back-s {
+	font-size:12px; font-weight:bold; color:#2b5c91;
+}
+
+.myjspace fieldset.adminform {
+	margin:0px 10px 10px;
+}
+
+.myjspace fieldset {
+	padding-bottom:5px; padding-left:5px; padding-right:5px; margin-bottom:10px;
+}
+
+.myjspace fieldset.front {
+	border:#ccc 1px solid;
+	text-align:left;
+	padding:5px;
+}
+
+.myjspace fieldset p {
+	margin:10px 0px;
+}
+
+.myjspace .title-pagename {
+	min-width:120px;white-space:nowrap;
+}
+
+.myjspace .title-cdate {
+	min-width:120px;
+}
+
+.myjspace .title-access, .myjspace .title-cdate2 {
+	white-space:nowrap;
+}
+
+.myjspace .myjsp-alert {
+	color:red;
+}
+
+.myjspace .myjsp-warning {
+	color:orange;
+}
+
+.myjspace-see .bsfooter a {
+	bottom:-100px; padding:10px; width:75%; color:#dddddd;
+}
+
+.myjspace-see #myjsp-iframe,
+.myjspace-see #cbprofile,
+.myjspace-see #jomsocial-profile,
+.myjspace-see #jomsocial-photos {
+	width:100%;
+	height:800px;
+}
+
+.myjspace-see ul.actions {
+	list-style-type:none;
+}
+
+.myjspace .noborder table {
+	border:none;
+}
+
+.myjspace .noborder tr {
+	border:none;
+}
+
+.myjspace .noborder td {
+	border:none;
+}
+
+.myjspace #mjs_pagename, .myjspace #mjs_metakey {
+	width:200px;
+}
+
+.myjspace #svalue {
+	width:80px;
+}
+
+.myjspace .myjsp-sort,
+.myjspace .myjsp-cat {
+	width:120px;
+}
+
+.myjspace #delete_file,
+.myjsp-upload #delete_file,
+.myjsp-upload #select_file {
+	width:160px;
+}
+
+.myjspace .myjsp-pages {
+	min-width:200px;
+}
+
+.myjsp-statis {
+	min-width:50px;
+}
+
+.myjsp-upload .selectf {
+	background-color:#eeeeee; padding:10px;
+}
+
+.myjsp-upload #progress-bar {
+	width:250px;
+}
+
+.myjspace #mjs_username2 {
+	width:100px;
+}
+
+.myjspace-search .myjsp-jtag {
+	min-width:200px
+}
+
+.myjspace-result-search .mjsp-search-tab td {
+	padding-left:3px; padding-right:3px;
+}
+
+.myjspace-result-search .mjsp-search-tab .img-preview {
+	max-width:70px;
+	max-height:70px;
+}
+
+.myjspace-result-search .mjsp-search-tab .mjsp-search-img, .myjspace .myjsp-icon {
+	text-align:center;
+}
+
+.mjsp-search-row-field img {
+	max-width:70px;
+	max-height:70px;
+}
+
+.myjspace .hidden {
+	display:none !important;
+}
+
+.myjspace .myjsp-label {
+	display:inline;
+}
+
+.dragdrop {
+	min-width:25px;
+	/* background: url(../images/upload.gif) no-repeat; */
+}
+
+.fileupload {
+	width:25px;
+}
+
+.encours {
+	background: url(../images/progress.gif) no-repeat;
+}
+
+#position-global {
+	margin-left:auto;
+	margin-right:auto;
+	width:450px; /* Obligatoire pour être centré */
+}
+
+.myjsp-size {
+	min-width:40px;
+	text-align:center;
+}
+
+#report {
+	width:100%;
+	min-height:150px;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.4.0" method="upgrade">
+	<name>BS MyJspace</name>
+	<packagename>BSMyJspace</packagename>
+	<creationDate>20/09/2019</creationDate>
+	<author>Bernard Saulme</author>
+	<version>3.0.1</version>
+	<url>https://softs.saulme.fr</url>
+	<packager>Bernard Saulme</packager>
+	<packagerurl>https://softs.saulme.fr</packagerurl>
+	<description>BS MyJspace installation package</description>
+
+	<files folder="">
+		<file type="component"	id="com_myjspace">com_myjspace-3.0.1b458.zip</file>
+		<file type="module"		id="mod_viewmyjspace"	client="site">mod_viewmyjspace-3.0.0b76.zip</file>
+		<file type="plugin"		id="pagebreakmyjspace"	group="content">plg_content_pagebreakmyjspace-3.0.0b122.zip</file>
+		<file type="plugin"		id="myjspace"			group="finder">plg_finder_myjspace_3.0.0_b2.zip</file>
+		<file type="plugin"		id="imagemyjspace"		group="editors-xtd">plg_xtd_myjspace_image-3.0.0b2.zip</file>
+		<file type="plugin"		id="pagebreakmyjsp"		group="editors-xtd">plg_xtd_myjspace_pagebreak-3.0.0b7.zip</file>
+		<file type="plugin"		id="tagsmyjspace"		group="editors-xtd">plg_xtd_myjspace_tags-3.0.0b19.zip</file>
+		<file type="plugin"		id="uploadmyjspace"		group="editors-xtd">plg_xtd_myjspace_upload-3.0.0b2.zip</file>
+		<file type="plugin"		id="myjspace"			group="quickicon">plg_quickicon_myjspace-3.0.0b11.zip</file>
+	</files>
+
+    <!-- Installation script -->
+    <scriptfile>script.BSMyJspace.php</scriptfile>
+
+    <!-- Update servers -->
+    <updateservers>
+    </updateservers>
+</extension>

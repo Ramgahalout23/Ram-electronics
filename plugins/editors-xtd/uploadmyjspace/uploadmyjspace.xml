@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="editors-xtd" method="upgrade">
+	<name>Button - MyJspace Upload</name>
+	<creationDate>06/08/2019</creationDate>
+	<author>Bernard Saulme</author>
+	<authorUrl>https://softs.saulme.fr/</authorUrl>
+	<copyright>Version by Bernard Saulme</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.0</version>
+	<build>2</build>
+
+	<description>PLG_EDITORSXTD_UPLOADMYJSPACE_XML_DESCRIPTION</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<files>
+		<filename plugin="uploadmyjspace">uploadmyjspace.php</filename>
+		<filename>index.html</filename>
+		<filename>COPYRIGHT.php</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_editors-xtd_uploadmyjspace.ini</language>
+		<language tag="en-GB">en-GB.plg_editors-xtd_uploadmyjspace.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

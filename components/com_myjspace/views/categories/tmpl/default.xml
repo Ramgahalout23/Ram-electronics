@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_MYJSPACE_CATEGORIES_VIEW_DEFAULT_TITLE">
+		<message>COM_MYJSPACE_CATEGORIES_VIEW_DEFAULT_DESC</message>
+	</layout>
+
+	<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MYJSPACE_CATEGORIES_OPTIONS" addfieldpath="/administrator/components/com_myjspace/models/fields">
+			<field name="categorie_title" type="radio" default="0" label="COM_MYJSPACE_CATEGORIES_TITLE_LABEL" description="COM_MYJSPACE_CATEGORIES_TITLE_DESC" class="switcher btn-group" >
+				<option value="0">COM_MYJSPACE_ADMIN_NO</option>
+				<option value="1">COM_MYJSPACE_ADMIN_YES</option>
+			</field>
+
+			<field name="categorie_user_filter" type="radio" default="0" label="COM_MYJSPACE_CATEGORIES_USER_FILTER_LABEL" description="COM_MYJSPACE_CATEGORIES_USER_FILTER_DESC" class="switcher btn-group" >
+				<option value="0">COM_MYJSPACE_ADMIN_NO</option>
+				<option value="1">COM_MYJSPACE_ADMIN_YES</option>
+			</field>
+
+			<field name="categorie_count" type="radio" default="1" label="COM_MYJSPACE_CATEGORIES_COUNT_LABEL" description="COM_MYJSPACE_CATEGORIES_COUNT_DESC" class="switcher btn-group" >
+				<option value="0">COM_MYJSPACE_ADMIN_NO</option>
+				<option value="1">COM_MYJSPACE_ADMIN_YES</option>
+			</field>
+			<field name="categorie_language" type="radio" default="0" label="COM_MYJSPACE_CATEGORIES_LANGUAGE_LABEL" description="COM_MYJSPACE_CATEGORIES_LANGUAGE_DESC" class="switcher btn-group" >
+				<option value="0">COM_MYJSPACE_ADMIN_NO</option>
+				<option value="1">COM_MYJSPACE_ADMIN_YES</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

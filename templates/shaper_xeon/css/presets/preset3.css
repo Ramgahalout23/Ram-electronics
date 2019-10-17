@@ -1,0 +1,94 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn.btn-primary {
+  background: #e6632d;
+}
+.btn.btn-primary:hover {
+  background: #c84b18;
+}
+input[type='submit'] {
+  background: #d9534f;
+  color: #fff;
+}
+input[type='submit']:hover {
+  background: #d2322d;
+  color: #fff;
+}
+a {
+  color: #9b3a12;
+}
+a:hover {
+  color: #e6632d;
+}
+body {
+  color: #999;
+}
+body.bg {
+  background: #e5e5e5;
+}
+.logo {
+  background-image: url(../../images/presets/preset3/logo.png);
+}
+#sp-main-menu ul.level-0 > li:hover,
+#sp-main-menu ul.level-0 > li.active {
+  background: #e6632d;
+}
+#sp-main-menu ul.level-0 > li:hover >a,
+#sp-main-menu ul.level-0 > li.active >a {
+  color: #fff;
+}
+#sp-portfolio-wrapper .sp-portfolio .sp-portfolio-filter a.btn {
+  background-color: #e6632d;
+}
+#sp-portfolio-wrapper .sp-portfolio .sp-portfolio-filter a.btn.active {
+  background-color: #b14315;
+}
+#sp-pricing-wrapper #sp-pricing .plan.featured li.plan-price {
+  background: #e6632d;
+}
+#sp-team-wrapper .left-arrow,
+#sp-team-wrapper .nav-right {
+  color: #e6632d;
+}
+#sp-team-wrapper .left-arrow:hover,
+#sp-team-wrapper .nav-right:hover {
+  color: #eb855b;
+}
+.module.highlighted {
+  background: #3498DB;
+}
+.module.highlighted a {
+  color: #fff !important;
+}
+#sp-bottom-wrapper #sp-bottom2 a:hover {
+  color: #e6632d;
+}
+#sp-footer-wrapper {
+  background: #e5e5e5;
+  color: #999;
+}

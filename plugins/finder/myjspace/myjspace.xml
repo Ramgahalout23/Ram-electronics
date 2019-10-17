@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="finder" method="upgrade">
+	<name>Smart Search - MyJspace</name>
+	<creationDate>06/08/2019</creationDate>
+	<author>Bernard Saulme</author>
+	<authorUrl>https://softs.saulme.fr/</authorUrl>
+	<copyright>Version by Bernard Saulme</copyright>
+	<license>Usage and copie only under author validation</license>
+	<version>3.0.0</version>
+	<build>2</build>
+
+	<scriptfile>install.php</scriptfile>
+	
+	<files>
+		<filename plugin="myjspace">myjspace.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_finder_myjspace.ini</language>
+		<language tag="en-GB">en-GB.plg_finder_myjspace.sys.ini</language>
+		<language tag="fr-FR">fr-FR.plg_finder_myjspace.ini</language>
+		<language tag="fr-FR">fr-FR.plg_finder_myjspace.sys.ini</language>
+	</languages>
+</extension>

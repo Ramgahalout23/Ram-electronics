@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="privacy" method="upgrade">
+	<name>Privacy - MyJspace</name>
+	<creationDate>29/06/2019</creationDate>
+	<author>Bernard Saulme</author>
+	<authorUrl>https://softs.saulme.fr</authorUrl>
+	<copyright>© Bernard Saulme</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.0</version>
+	<build>2</build>
+	<description>Privacy - Myjspace plugin</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<files>
+		<filename plugin="myjspace">myjspace.php</filename>
+		<filename>COPYRIGHT.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+</extension>

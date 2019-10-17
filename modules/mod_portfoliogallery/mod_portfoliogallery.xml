@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="mytest.css"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+    <name>Portfolio Gallery</name>
+    <author>Huge-IT</author>
+    <creationDate>January 2015</creationDate>
+    <copyright>Copyright (C) 2013 Huge-IT.com 2013. All rights reserved.</copyright> 
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>info@huge-it.com</authorEmail> 
+    <authorUrl>http://www.huge-it.com</authorUrl>
+    <version>1.1.0</version>
+    <files>
+        <filename>mod_portfoliogallery.xml</filename>
+        <filename module="mod_portfoliogallery">mod_portfoliogallery.php</filename>
+        <filenmae>index.html</filenmae>
+        <filename>helper.php</filename>
+        <folder>models</folder>
+        <folder>language</folder>
+    </files>
+   <config>
+      
+    <fields name="params">
+        <fieldset name="basic" addfieldpath="/modules/mod_portfoliogallery/models/fields" label="General Options">
+            <field name="choose_portfoliogallery" type="jscolor" label="Choose The Gallery"  type_="choose_portfolio">
+            </field>
+        </fieldset>
+    </fields>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_portfoliogallery.ini></language>
+        <language tag="en-GB">en-GB/en-GB.mod_portfoliogallery.sys.ini></language>
+    </languages>
+    </config>
+</extension>

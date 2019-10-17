@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>portfolio gallery image beautiful</name>
+  <author>joomhome.com</author>
+  <creationDate>10/2015</creationDate>
+  <copyright>Copyright (C) 2015 joomhome.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joomhome.com</authorEmail>
+  <authorUrl>www.joomhome.com</authorUrl>
+  <version>1.1</version>
+  <description>portfolio gallery image beautiful extension for joomla</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_portfolio_gallery_image_beautiful.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_portfolio_gallery_image_beautiful">mod_portfolio_gallery_image_beautiful.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+    <folder>helpers/</folder>
+    <folder>language/</folder>
+    <folder>assets/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_portfolio_gallery_image_beautiful/fields">
+        <field type="assets" url="/modules/mod_portfolio_gallery_image_beautiful/assets" />
+        <field type="tmpl" name="jhm_style" default="portfolio_gallery"  label="STYLE" description="STYLE_DESC" />
+		<field name="enable_jQuery" type="radio" default="1" label="Enable/Disable jQuery" description="select Enable/Disable">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</field>
+		<field name="width_module" type="text" default="100%" label="Width of module(%)" description="Width of module(%)" />
+		<field name="height_box" type="text" default="500" label="Height of box detail when expand" description="Height without px" />-->
+		
+      </fieldset>
+      <fieldset name="sliders" label="Setting sliders">
+        <field type="sliders" name="sliders" />
+      </fieldset>
+      <fieldset name="animation">
+        <field type="animation" name="animation" />
+      </fieldset>
+      <fieldset name="advanced">	  
+        <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache" type="hidden" default="1" />
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+        <field name="cachemode" type="hidden" default="itemid">
+         <option value="itemid"></option>
+       </field>
+     </fieldset>
+   </fields>
+ </config>
+</extension>

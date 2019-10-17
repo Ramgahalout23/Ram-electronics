@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="2.5.0" method="upgrade">
+
+<name>COM_PORTFOLIOGALLERY</name>
+<author>Huge-IT</author>
+
+<creationDate>January 2015</creationDate>
+<copyright>Copyright (C) 2013 Huge-IT.com 2013. All rights reserved.</copyright> 
+<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+<authorEmail>info@huge-it.com</authorEmail> 
+<authorUrl>http://www.huge-it.com</authorUrl>
+<version>1.1.0</version>
+
+
+	<install>
+            <sql>
+                <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+            </sql>
+	</install>
+
+	<uninstall>
+            <sql>
+                <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+            </sql>
+	</uninstall>
+
+	<update>
+            <schemas>
+                <schemapath type="mysql">sql/updates/mysql</schemapath>
+            </schemas>
+	</update>
+
+	<files folder="site">
+            <filename>index.html</filename>
+            <filename>controller.php</filename>
+			<filename>ajax_url.php</filename>
+            <filename>portfoliogallery.php</filename>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>helpers</folder>
+	</files>
+
+	<media destination="com_portfoliogallery" folder="media">
+            <filename>index.html</filename>
+            <folder>images</folder>
+            <folder>js</folder>
+            <folder>style</folder>
+	</media>
+	<administration>
+	    <menu label  = "Huge-IT Portfolio" >COM_PORTFOLIOGALLERY</menu>
+        <submenu>
+            <menu link="option=com_portfoliogallery&amp;view=general">COM_GENERAL</menu>
+            <menu link="option=com_portfoliogallery&amp;view=lightbox">COM_LIGHTBOX</menu>
+            <menu link="option=com_portfoliogallery&amp;view=featured">COM_FEAUTURED</menu>
+        </submenu>
+
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>controller.php</filename>
+            <filename>portfoliogallery.php</filename>
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_portfoliogallery.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_portfoliogallery.sys.ini</language>
+       </languages>
+		
+		
+	</administration>
+</extension>
